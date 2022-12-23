@@ -1,0 +1,45 @@
+Componentes React
+-- Eles são criados e colocados dentro da pasta src
+
+Imagens 
+--são colocadas dentro da pasta public
+
+Sobre class no jsx
+-- Class é uma palavra reservada do javascript, para se usar uma class no react é preciso se ultilizar o className
+
+Para evitar a duplicação 
+-- Na criação de componentes, para evitar a duplicação de nomes basta mudar o nome do arquivo para index.js
+
+EstrictMode
+-- serve para alertar um erro ele que duplica o componente que pode se ver com o props no console.log
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+Sobre o package.json
+
+--O package.json é usado para armazenar os metadados associados ao projeto
+
+
+PARA SE REDENRIZAR UMA LISTA
+
+-- É preciso usar a função map do javascript
+
+
+EVENTOS NO REACT
+-- onSubmit
+
+GERNCIAMENTO DE ESTADOS DAS VARIÁVEIS -- > FAZER PESQUISA
+
+Para saber mais: Stateless VS Statefull
+
+  --  React tem duas abordagens diferentes para lidar com inputs de formulários.
+
+      Um elemento de input de formulário cujo valor é controlado pelo React é chamado de componente controlado. Quando o usuário insere dados em um componente controlado, o evento que manipula essa alteração é disparado e o seu código decide se o input é válido (ou seja, renderizado com o valor atualizado). Se você não re-renderizar o elemento de formulário, permanecerá inalterado.
+
+      Um componente não controlado funciona como um elemento de formulário fora do React. Quando um usuário insere dados em um campo de formulário (um input box, dropbox, etc), a informação atualizada é refletida sem necessidade do React fazer nada. No entanto, isso também significa que você não pode forçar o campo a ter um certo valor.
